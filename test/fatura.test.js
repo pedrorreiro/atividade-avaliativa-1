@@ -31,13 +31,13 @@ class Cliente {
 describe("Filtrar salario", () => {
     test("Teste 1", () => {
 
-        c1 = new Cliente("Gabriel", new Date(2021,10,12), "Paraná");
-        c2 = new Cliente("José", new Date(2021,9,2), "Minas Gerais");
-        c3 = new Cliente("João", new Date(2021,10,12), "São Paulo");
+        c1 = new Cliente("Gabriel", new Date(2021,9,12), "Paraná");
+        c2 = new Cliente("José", new Date(2021,8,2), "Minas Gerais");
+        c3 = new Cliente("João", new Date(2021,9,12), "São Paulo");
 
-        f1 = new Fatura(0,1500,new Date(2021,9,5), c1);
-        f2 = new Fatura(0,1900,new Date(2021,10,21), c2);
-        f3 = new Fatura(0,1800,new Date(2021,10,5), c3);
+        f1 = new Fatura(0,1500,new Date(2021,8,5), c1);
+        f2 = new Fatura(0,1900,new Date(2021,9,21), c2);
+        f3 = new Fatura(0,1800,new Date(2021,9,5), c3);
 
         const faturas = [f1,f2,f3];
 
