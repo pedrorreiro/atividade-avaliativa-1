@@ -52,10 +52,10 @@ describe("Filtrar salario", () => {
     test("Teste 2", () => {
 
       c1 = new Cliente("Pedro", new Date(2021,10,12), "Paraná");
-      c2 = new Cliente("Matheus", new Date(2021,11,2), "Minas Gerais");
+      c2 = new Cliente("Matheus", new Date(2021,9,2), "Minas Gerais");
       c3 = new Cliente("Jorge", new Date(2021,10,8), "São Paulo");
 
-      f1 = new Fatura(0,2499,new Date(2021,10,5), c1);
+      f1 = new Fatura(0,2499,new Date(2021,9,5), c1);
       f2 = new Fatura(0,2100,new Date(2021,9,21), c2);
       f3 = new Fatura(0,2200,new Date(2021,9,5), c3);
 
