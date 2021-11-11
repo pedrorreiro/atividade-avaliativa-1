@@ -70,13 +70,13 @@ describe("Filtrar salario", () => {
   }),
   test("Teste 3", () => {
 
-    c1 = new Cliente("Pedro", new Date(2021,10,12), "Paraná");
-    c2 = new Cliente("Matheus", new Date(2021,9,2), "Minas Gerais");
-    c3 = new Cliente("Jorge", new Date(2021,10,8), "São Paulo");
+    c1 = new Cliente("Pedro", new Date(2021,8,12), "Paraná");
+    c2 = new Cliente("Matheus", new Date(2021,7,2), "Minas Gerais");
+    c3 = new Cliente("Jorge", new Date(2021,6,8), "São Paulo");
 
-    f1 = new Fatura(0,2501,new Date(2021,8,5), c1);
-    f2 = new Fatura(0,2600,new Date(2021,7,21), c2);
-    f3 = new Fatura(0,2999,new Date(2021,6,5), c3);
+    f1 = new Fatura(0,2501, new Date(2021,9,5), c1);
+    f2 = new Fatura(0,2700, new Date(2021,9,21), c2);
+    f3 = new Fatura(0,2999, new Date(2021,9,5), c3);
 
     const faturas = [f1,f2,f3];
 
