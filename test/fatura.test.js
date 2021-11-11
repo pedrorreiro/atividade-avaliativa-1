@@ -86,5 +86,24 @@ describe("Filtrar salario", () => {
 
     expect(result).toEqual(newFaturas);
 
-});
+}),
+  test("Teste 4", () => {
+
+    c1 = new Cliente("Pedro", new Date(2021,8,12), "Paraná");
+    c2 = new Cliente("Matheus", new Date(2021,7,2), "Santa Catarina");
+    c3 = new Cliente("Jorge", new Date(2021,6,8), "Minas Gerais");
+
+    f1 = new Fatura(0,4001, new Date(2021,9,5), c1);
+    f2 = new Fatura(0,4600, new Date(2021,9,21), c2);
+    f3 = new Fatura(0,3600, new Date(2021,9,5), c3);
+
+    const faturas = [f1,f2,f3];
+
+    const newFaturas = [f3];
+
+    var result = filtrar(faturas);
+
+    expect(result).toEqual(newFaturas);
+
+  });
 });
