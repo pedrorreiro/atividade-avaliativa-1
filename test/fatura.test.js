@@ -9,8 +9,6 @@
 // Teste 4: Se o valor da fatura for maior que 4000 e pertencer a algum estado da região Sul do
 // Brasil.
 
-
-
 const filtrar = require('../lib/filtro');
 
 class Fatura {
@@ -30,8 +28,8 @@ class Cliente {
     }
 }
 
-describe('Filtrar salario', () => {
-    test('Teste 1', () => {
+describe("Filtrar salario", () => {
+    test("Teste 1", () => {
 
         c1 = new Cliente("Gabriel", new Date(2021,10,12), "Paraná");
         c2 = new Cliente("José", new Date(2021,9,2), "Minas Gerais");
